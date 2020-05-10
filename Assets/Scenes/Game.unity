@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 32069716}
   - component: {fileID: 32069715}
   m_Layer: 5
-  m_Name: field_score_p2
+  m_Name: Score_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 80433355}
   - component: {fileID: 80433354}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: w
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 100143381}
   - component: {fileID: 100143380}
   m_Layer: 0
-  m_Name: izq
+  m_Name: Izquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,86 +371,6 @@ Transform:
   m_Father: {fileID: 1776891409}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &121291338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 121291339}
-  - component: {fileID: 121291341}
-  - component: {fileID: 121291340}
-  m_Layer: 5
-  m_Name: Boton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &121291339
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121291338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1610817037}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -278}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &121291340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121291338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6, g: 0.83921576, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 4a9fc1e1ecacd3249916e61c9cc646cf, type: 3}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 150
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1.3
-  m_Text: 'INICIAR PARTIDA
-
-'
---- !u!222 &121291341
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121291338}
-  m_CullTransparentMesh: 0
 --- !u!1 &128706805
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +386,7 @@ GameObject:
   - component: {fileID: 128706810}
   - component: {fileID: 128706811}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,12 +400,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128706805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 3.62, z: 0}
+  m_LocalPosition: {x: 0, y: 7.45, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.5}
   m_Children:
   - {fileID: 2115219089}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 6
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &128706807
 MeshRenderer:
@@ -609,12 +529,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193669696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9, y: 0, z: 0}
+  m_LocalPosition: {x: -17.880001, y: -0.018300056, z: 1.05}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 1717648952}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 2
+  m_Father: {fileID: 1626064129}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &193669698
 MonoBehaviour:
@@ -871,7 +791,7 @@ GameObject:
   - component: {fileID: 229703329}
   - component: {fileID: 229703333}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,12 +805,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229703327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.59, y: 3.62, z: 0}
+  m_LocalPosition: {x: 6, y: 7.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2117921036}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 9
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &229703329
 SphereCollider:
@@ -986,6 +906,40 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &249269032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249269033}
+  m_Layer: 0
+  m_Name: Astronautas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249269033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249269032}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.41, y: -3.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1657886912}
+  - {fileID: 1013336292}
+  - {fileID: 450163366}
+  - {fileID: 1258632332}
+  m_Father: {fileID: 677258293}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250960360
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +951,7 @@ GameObject:
   - component: {fileID: 250960361}
   - component: {fileID: 250960362}
   m_Layer: 0
-  m_Name: Diamante-03
+  m_Name: AstronautaPixelArt_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,7 +1034,7 @@ GameObject:
   - component: {fileID: 289876565}
   - component: {fileID: 289876564}
   m_Layer: 0
-  m_Name: piso
+  m_Name: Piso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,7 +1212,7 @@ GameObject:
   - component: {fileID: 349974064}
   - component: {fileID: 349974063}
   m_Layer: 0
-  m_Name: techo
+  m_Name: Techo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1354,7 +1308,7 @@ GameObject:
   - component: {fileID: 450163368}
   - component: {fileID: 450163367}
   m_Layer: 0
-  m_Name: CoinAmarillo (1)
+  m_Name: Astronauta_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1368,12 +1322,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450163365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.37, y: 0, z: 0}
+  m_LocalPosition: {x: 4.7799997, y: 3.83, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 1572308504}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 12
+  m_Father: {fileID: 249269033}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 440.66223}
 --- !u!111 &450163367
 Animation:
@@ -1479,7 +1433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 454182812}
   m_Layer: 5
-  m_Name: top_left
+  m_Name: Puntos_Rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,7 +1471,7 @@ GameObject:
   - component: {fileID: 455582913}
   - component: {fileID: 455582912}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,7 +1549,7 @@ GameObject:
   - component: {fileID: 616735498}
   - component: {fileID: 616735497}
   m_Layer: 5
-  m_Name: Text
+  m_Name: s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1673,7 +1627,7 @@ GameObject:
   - component: {fileID: 630098644}
   - component: {fileID: 630098643}
   m_Layer: 5
-  m_Name: field_score_p1
+  m_Name: Score_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,19 +1740,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 211752375}
-  - {fileID: 793469076}
-  - {fileID: 193669697}
+  - {fileID: 1626064129}
   - {fileID: 1776891409}
-  - {fileID: 1657886912}
-  - {fileID: 1013336292}
-  - {fileID: 128706806}
-  - {fileID: 1962037693}
-  - {fileID: 1934580872}
-  - {fileID: 229703328}
-  - {fileID: 1356265195}
-  - {fileID: 1553984465}
-  - {fileID: 450163366}
-  - {fileID: 1258632332}
+  - {fileID: 249269033}
+  - {fileID: 1854167913}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2018,12 +1963,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793469075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 0, z: 0}
+  m_LocalPosition: {x: 0.119999886, y: -0.018300056, z: 1.05}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 2057699280}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 1
+  m_Father: {fileID: 1626064129}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &793469077
 MonoBehaviour:
@@ -2129,7 +2074,7 @@ GameObject:
   - component: {fileID: 797416783}
   - component: {fileID: 797416784}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: NavePixelArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2210,7 +2155,7 @@ GameObject:
   - component: {fileID: 853606463}
   - component: {fileID: 853606464}
   m_Layer: 0
-  m_Name: Diamante-03 (1)
+  m_Name: AstronautaPixelArt_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2291,7 +2236,7 @@ GameObject:
   - component: {fileID: 873246448}
   - component: {fileID: 873246449}
   m_Layer: 0
-  m_Name: Coin (3)
+  m_Name: AsteroidePixelArt_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2376,7 +2321,7 @@ GameObject:
   - component: {fileID: 1013336293}
   - component: {fileID: 1013336297}
   m_Layer: 0
-  m_Name: CoinAmarillo
+  m_Name: Astronauta_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2390,12 +2335,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013336291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8400002, y: 3.62, z: 0}
+  m_LocalPosition: {x: 3.25, y: 7.45, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 1704419214}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 5
+  m_Father: {fileID: 249269033}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360}
 --- !u!135 &1013336293
 SphereCollider:
@@ -2571,7 +2516,7 @@ GameObject:
   - component: {fileID: 1258632334}
   - component: {fileID: 1258632333}
   m_Layer: 0
-  m_Name: CoinAmarillo (2)
+  m_Name: Astronauta_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2585,12 +2530,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258632331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.37, y: 0, z: 0}
+  m_LocalPosition: {x: -1.9599999, y: 3.83, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 250960361}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 13
+  m_Father: {fileID: 249269033}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 150}
 --- !u!111 &1258632333
 Animation:
@@ -2701,7 +2646,7 @@ GameObject:
   - component: {fileID: 1356265196}
   - component: {fileID: 1356265200}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2715,12 +2660,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356265194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8400002, y: -3.83, z: 0}
+  m_LocalPosition: {x: 3.25, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2130734684}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 10
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1356265196
 SphereCollider:
@@ -2828,7 +2773,7 @@ GameObject:
   - component: {fileID: 1474088971}
   - component: {fileID: 1474088970}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2911,7 +2856,7 @@ GameObject:
   - component: {fileID: 1553984466}
   - component: {fileID: 1553984470}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2925,12 +2870,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553984464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.59, y: -3.83, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 873246448}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 11
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1553984466
 SphereCollider:
@@ -3036,7 +2981,7 @@ GameObject:
   - component: {fileID: 1572308504}
   - component: {fileID: 1572308505}
   m_Layer: 0
-  m_Name: Diamante-03
+  m_Name: AstronautaPixelArt_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3202,8 +3147,6 @@ RectTransform:
   - {fileID: 80433353}
   - {fileID: 455582911}
   - {fileID: 1474088969}
-  - {fileID: 1636590532}
-  - {fileID: 121291339}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3212,7 +3155,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1636590531
+--- !u!1 &1626064128
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3220,80 +3163,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1636590532}
-  - component: {fileID: 1636590534}
-  - component: {fileID: 1636590533}
-  m_Layer: 5
-  m_Name: Titulo
+  - component: {fileID: 1626064129}
+  m_Layer: 0
+  m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1636590532
-RectTransform:
+  m_IsActive: 1
+--- !u!4 &1626064129
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636590531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1626064128}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.88, y: 0.018300056, z: -1.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1610817037}
-  m_RootOrder: 6
+  m_Children:
+  - {fileID: 793469076}
+  - {fileID: 193669697}
+  m_Father: {fileID: 677258293}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 284}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1636590533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636590531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9686275, b: 0.058823533, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 4a9fc1e1ecacd3249916e61c9cc646cf, type: 3}
-    m_FontSize: 130
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 150
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1.3
-  m_Text: 'SPACE
-
-    PONG
-
-'
---- !u!222 &1636590534
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636590531}
-  m_CullTransparentMesh: 0
 --- !u!1 &1657886911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,7 +3202,7 @@ GameObject:
   - component: {fileID: 1657886916}
   - component: {fileID: 1657886917}
   m_Layer: 0
-  m_Name: CoinAmarillo
+  m_Name: Astronauta_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,12 +3216,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657886911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41, y: -3.83, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 853606463}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 4
+  m_Father: {fileID: 249269033}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50.399998}
 --- !u!114 &1657886913
 MonoBehaviour:
@@ -3434,7 +3327,7 @@ GameObject:
   - component: {fileID: 1704419214}
   - component: {fileID: 1704419215}
   m_Layer: 0
-  m_Name: Diamante-03
+  m_Name: AstronautaPixelArt_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3515,7 +3408,7 @@ GameObject:
   - component: {fileID: 1717648952}
   - component: {fileID: 1717648953}
   m_Layer: 0
-  m_Name: Paleta-01
+  m_Name: PaletaPixelArt_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3595,7 +3488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742109923}
   m_Layer: 5
-  m_Name: top_right
+  m_Name: Puntos_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3631,7 +3524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776891409}
   m_Layer: 0
-  m_Name: paredes
+  m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3653,7 +3546,7 @@ Transform:
   - {fileID: 349974062}
   - {fileID: 289876563}
   m_Father: {fileID: 677258293}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848749258
 GameObject:
@@ -3668,7 +3561,7 @@ GameObject:
   - component: {fileID: 1848749260}
   - component: {fileID: 1848749259}
   m_Layer: 0
-  m_Name: der
+  m_Name: Derecha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3749,6 +3642,42 @@ Transform:
   m_Father: {fileID: 1776891409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1854167912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854167913}
+  m_Layer: 0
+  m_Name: Asteroides
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854167913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854167912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.41, y: -3.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 128706806}
+  - {fileID: 1962037693}
+  - {fileID: 1934580872}
+  - {fileID: 229703328}
+  - {fileID: 1356265195}
+  - {fileID: 1553984465}
+  m_Father: {fileID: 677258293}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1934580871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,7 +3693,7 @@ GameObject:
   - component: {fileID: 1934580876}
   - component: {fileID: 1934580877}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3778,12 +3707,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934580871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.16, y: 3.62, z: 0}
+  m_LocalPosition: {x: -2.75, y: 7.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2133729061}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 8
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1934580873
 MonoBehaviour:
@@ -3894,7 +3823,7 @@ GameObject:
   - component: {fileID: 1962037697}
   - component: {fileID: 1962037698}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Asteroide_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3908,12 +3837,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962037692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.16, y: -3.83, z: 0}
+  m_LocalPosition: {x: -2.75, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2068189248}
-  m_Father: {fileID: 677258293}
-  m_RootOrder: 7
+  m_Father: {fileID: 1854167913}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1962037694
 MonoBehaviour:
@@ -4019,7 +3948,7 @@ GameObject:
   - component: {fileID: 2057699280}
   - component: {fileID: 2057699281}
   m_Layer: 0
-  m_Name: Paleta-01 (1)
+  m_Name: PaletaPixelArt_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4033,7 +3962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057699279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.119999886, y: 0.0061000003, z: -1.05}
+  m_LocalPosition: {x: -0.119999886, y: 0.006100019, z: -1.05}
   m_LocalScale: {x: 0.9488105, y: 0.3080817, z: 0.9384605}
   m_Children: []
   m_Father: {fileID: 793469076}
@@ -4100,7 +4029,7 @@ GameObject:
   - component: {fileID: 2068189248}
   - component: {fileID: 2068189249}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: AsteroidePixelArt_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4181,7 +4110,7 @@ GameObject:
   - component: {fileID: 2115219089}
   - component: {fileID: 2115219090}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: AsteroidePixelArt_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4262,7 +4191,7 @@ GameObject:
   - component: {fileID: 2117921036}
   - component: {fileID: 2117921037}
   m_Layer: 0
-  m_Name: Coin (1)
+  m_Name: AsteroidePixelArt_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4343,7 +4272,7 @@ GameObject:
   - component: {fileID: 2130734684}
   - component: {fileID: 2130734685}
   m_Layer: 0
-  m_Name: Coin (2)
+  m_Name: AsteroidePixelArt_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4424,7 +4353,7 @@ GameObject:
   - component: {fileID: 2133729061}
   - component: {fileID: 2133729062}
   m_Layer: 0
-  m_Name: Coin (1)
+  m_Name: AsteroidePixelArt_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
