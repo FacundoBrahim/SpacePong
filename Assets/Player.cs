@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     }
     float offset = 0.7f;
     public Animation anim;
+    public AudioSource audioSource;
+    public Ball ball;
 
     void Update()
     {
@@ -91,11 +93,27 @@ public class Player : MonoBehaviour
 
         //choco con la pelota:
         game.playerActiveType = type;
+        ball.AumentarSpeed();
         anim.Play();
-
+        audioSource.Play();
         float center = transform.position.y; 
         ball.direction_y += (ball.transform.position.y - center) * angleDistortion;
         other.gameObject.GetComponent<Ball>().direction_x *= -1;
+    }
+
+    public void AumentarTamaño () {
+        if (transform.localScale.y == 3) { // Si el tamaño en Y es 3, osea el original
+            transform.localScale = new Vector2(transform.localScale.x + 0.500f, transform.localScale.y + 1); // Aumentar tanto en X y tanto en Y
+        }
+        CancelInvoke (); // Cancelar el Invoke si habia uno
+        Invoke ("TamañoNormal", 2f); // Empezar el Invoke o reiniciarlo para llegar a la funcion que vuelve al tamaño normal
+    }
+
+    public void TamañoNormal () {
+        if (transform.localScale.y == 4) { // Si el tamaño en Y es 4, osea esta aumentado
+            transform.localScale = new Vector2(transform.localScale.x - 0.500f, transform.localScale.y - 1); // Restarle lo anteriormente establecido para volver al original
+            // Continua en Coin
+        }
     }
 
 

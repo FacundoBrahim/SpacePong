@@ -10,6 +10,11 @@ public class Coin : MonoBehaviour {
     public float smooth = 1;
     public float direction_x = 1f;
     public float direction_y = 1f;
+    public Player player1;
+    public Player player2;
+    public Ball ball;
+    public AudioSource audioSource;
+    public Animation anim;
 
     void Update () {
         _x = transform.position.x;
@@ -31,6 +36,7 @@ public class Coin : MonoBehaviour {
 
         _x = _y = 0;
         transform.position = Vector3.zero;
+        anim.Play();
     }
 
     private void ChangeYDirectionCoin (int direction) {
@@ -40,8 +46,15 @@ public class Coin : MonoBehaviour {
 
     private void OnTriggerEnter (Collider other) {
         int extra = 0;
-        if (transform.localScale.x == 0.8f) {
-            extra = 4;
+        if (transform.localScale.x == 0.8f) { // Selecciono solo los astronautas
+            audioSource.Play();
+            if (ball.direction_x == 1){ // Si la direccion de la pelota es 1, osea el ultimo en pegarle fue el jugador 2
+                player2.AumentarTamaño(); // Activar funcion que aumenta el tamaño por 2 seg y lo vuelve a la normalidad
+            }
+            else {
+                player1.AumentarTamaño(); // Si no es 1, osea el ultimo en pegarle fue el jugador 1, activar esa funcion al jugador 1
+            }
+            extra = 4; // Los astronautas suman 4 puntos extras
         }
 
         if (game.playerActiveType == Player.types.PLAYER1)
