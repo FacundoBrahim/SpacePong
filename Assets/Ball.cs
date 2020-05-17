@@ -52,7 +52,7 @@ public class Ball : MonoBehaviour {
     }
 
     public void AumentarSpeed () {
-        speed = 30;
+        speed = 27;
         CancelInvoke ();
         Invoke ("SpeedNormal", 0.300f);
     }
