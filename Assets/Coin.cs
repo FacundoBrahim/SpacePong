@@ -14,7 +14,6 @@ public class Coin : MonoBehaviour {
     public Player player2;
     public Ball ball;
     public AudioSource audioSource;
-    public Animation anim;
 
     void Update () {
         _x = transform.position.x;
@@ -36,7 +35,7 @@ public class Coin : MonoBehaviour {
 
         _x = _y = 0;
         transform.position = Vector3.zero;
-        anim.Play();
+        
     }
 
     private void ChangeYDirectionCoin (int direction) {

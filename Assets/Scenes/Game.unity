@@ -384,7 +384,6 @@ GameObject:
   - component: {fileID: 128706807}
   - component: {fileID: 128706809}
   - component: {fileID: 128706810}
-  - component: {fileID: 128706811}
   m_Layer: 0
   m_Name: Asteroide_1
   m_TagString: Untagged
@@ -399,14 +398,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128706805}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.4250685, w: 0.9051612}
   m_LocalPosition: {x: 0, y: 7.45, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.5}
   m_Children:
   - {fileID: 2115219089}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -50.31}
 --- !u!23 &128706807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -475,7 +474,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!135 &128706810
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -489,22 +487,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &128706811
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128706805}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &193669696
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +973,6 @@ GameObject:
   - component: {fileID: 229703331}
   - component: {fileID: 229703330}
   - component: {fileID: 229703329}
-  - component: {fileID: 229703333}
   m_Layer: 0
   m_Name: Asteroide_4
   m_TagString: Untagged
@@ -1006,14 +987,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229703327}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.76340157, w: 0.64592427}
   m_LocalPosition: {x: 6, y: 7.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2117921036}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -99.53}
 --- !u!135 &229703329
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1048,7 +1029,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!23 &229703331
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1096,23 +1076,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229703327}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!111 &229703333
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229703327}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f1a2ca6d8facc8e4f8a7151c1ff42e3b, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  - {fileID: 7400000, guid: f1a2ca6d8facc8e4f8a7151c1ff42e3b, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &249269032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250960361}
   - component: {fileID: 250960362}
+  - component: {fileID: 250960363}
   m_Layer: 0
   m_Name: AstronautaPixelArt_4
   m_TagString: Untagged
@@ -1228,6 +1192,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &250960363
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250960360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &289876562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,7 +1496,6 @@ GameObject:
   - component: {fileID: 450163370}
   - component: {fileID: 450163369}
   - component: {fileID: 450163368}
-  - component: {fileID: 450163367}
   - component: {fileID: 450163372}
   m_Layer: 0
   m_Name: Astronauta_3
@@ -1529,31 +1511,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450163365}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.034899585, w: 0.99939084}
   m_LocalPosition: {x: 4.7799997, y: 3.83, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 1572308504}
   m_Father: {fileID: 249269033}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 440.66223}
---- !u!111 &450163367
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450163365}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  - {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4}
 --- !u!135 &450163368
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1588,7 +1553,6 @@ MonoBehaviour:
   player2: {fileID: 193669698}
   ball: {fileID: 211752372}
   audioSource: {fileID: 450163372}
-  anim: {fileID: 0}
 --- !u!23 &450163370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2679,6 +2643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853606463}
   - component: {fileID: 853606464}
+  - component: {fileID: 853606465}
   m_Layer: 0
   m_Name: AstronautaPixelArt_1
   m_TagString: Untagged
@@ -2750,6 +2715,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &853606465
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853606462}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &873246447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873246448}
   - component: {fileID: 873246449}
+  - component: {fileID: 873246450}
   m_Layer: 0
   m_Name: AsteroidePixelArt_6
   m_TagString: Untagged
@@ -2831,6 +2816,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &873246450
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873246447}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1013336291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,7 +2848,6 @@ GameObject:
   - component: {fileID: 1013336295}
   - component: {fileID: 1013336294}
   - component: {fileID: 1013336293}
-  - component: {fileID: 1013336297}
   - component: {fileID: 1013336298}
   m_Layer: 0
   m_Name: Astronauta_2
@@ -2860,14 +2863,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013336291}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.92913264, w: -0.36974666}
   m_LocalPosition: {x: 3.25, y: 7.45, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 1704419214}
   m_Father: {fileID: 249269033}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 223.4}
 --- !u!135 &1013336293
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2902,7 +2905,6 @@ MonoBehaviour:
   player2: {fileID: 193669698}
   ball: {fileID: 211752372}
   audioSource: {fileID: 1013336298}
-  anim: {fileID: 0}
 --- !u!23 &1013336295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2950,22 +2952,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013336291}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!111 &1013336297
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013336291}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!82 &1013336298
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3141,7 +3127,6 @@ GameObject:
   - component: {fileID: 1258632336}
   - component: {fileID: 1258632335}
   - component: {fileID: 1258632334}
-  - component: {fileID: 1258632333}
   - component: {fileID: 1258632338}
   m_Layer: 0
   m_Name: Astronauta_4
@@ -3157,31 +3142,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258632331}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.8878153, w: 0.4601999}
   m_LocalPosition: {x: -1.9599999, y: 3.83, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 250960361}
   m_Father: {fileID: 249269033}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 150}
---- !u!111 &1258632333
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258632331}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f1a2ca6d8facc8e4f8a7151c1ff42e3b, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  - {fileID: 7400000, guid: f1a2ca6d8facc8e4f8a7151c1ff42e3b, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -125.2}
 --- !u!135 &1258632334
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3216,7 +3184,6 @@ MonoBehaviour:
   player2: {fileID: 193669698}
   ball: {fileID: 211752372}
   audioSource: {fileID: 1258632338}
-  anim: {fileID: 0}
 --- !u!23 &1258632336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3373,7 +3340,6 @@ GameObject:
   - component: {fileID: 1356265198}
   - component: {fileID: 1356265197}
   - component: {fileID: 1356265196}
-  - component: {fileID: 1356265200}
   m_Layer: 0
   m_Name: Asteroide_5
   m_TagString: Untagged
@@ -3388,14 +3354,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356265194}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9826614, w: 0.18540931}
   m_LocalPosition: {x: 3.25, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2130734684}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -158.63}
 --- !u!135 &1356265196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3430,7 +3396,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!23 &1356265198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3478,23 +3443,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356265194}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!111 &1356265200
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356265194}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  - {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1474088968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,7 +3536,6 @@ GameObject:
   - component: {fileID: 1553984468}
   - component: {fileID: 1553984467}
   - component: {fileID: 1553984466}
-  - component: {fileID: 1553984470}
   m_Layer: 0
   m_Name: Asteroide_6
   m_TagString: Untagged
@@ -3603,14 +3550,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553984464}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.27085245, w: 0.9626209}
   m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 873246448}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 31.43}
 --- !u!135 &1553984466
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3645,7 +3592,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!23 &1553984468
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3693,22 +3639,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553984464}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!111 &1553984470
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553984464}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1572308503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3719,6 +3649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572308504}
   - component: {fileID: 1572308505}
+  - component: {fileID: 1572308506}
   m_Layer: 0
   m_Name: AstronautaPixelArt_3
   m_TagString: Untagged
@@ -3790,6 +3721,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1572308506
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572308503}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1610817033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3939,7 +3889,6 @@ GameObject:
   - component: {fileID: 1657886914}
   - component: {fileID: 1657886913}
   - component: {fileID: 1657886916}
-  - component: {fileID: 1657886917}
   - component: {fileID: 1657886918}
   m_Layer: 0
   m_Name: Astronauta_1
@@ -3955,14 +3904,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657886911}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.76565164, w: 0.6432555}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 853606463}
   m_Father: {fileID: 249269033}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 99.93}
 --- !u!114 &1657886913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3984,7 +3933,6 @@ MonoBehaviour:
   player2: {fileID: 193669698}
   ball: {fileID: 211752372}
   audioSource: {fileID: 1657886918}
-  anim: {fileID: 1657886917}
 --- !u!23 &1657886914
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4045,23 +3993,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &1657886917
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657886911}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  - {fileID: 7400000, guid: fb188754f66dedd4888931788d5c14c0, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!82 &1657886918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4168,6 +4099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704419214}
   - component: {fileID: 1704419215}
+  - component: {fileID: 1704419216}
   m_Layer: 0
   m_Name: AstronautaPixelArt_2
   m_TagString: Untagged
@@ -4239,6 +4171,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1704419216
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704419213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1717648951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4533,7 +4484,6 @@ GameObject:
   - component: {fileID: 1934580874}
   - component: {fileID: 1934580873}
   - component: {fileID: 1934580876}
-  - component: {fileID: 1934580877}
   m_Layer: 0
   m_Name: Asteroide_3
   m_TagString: Untagged
@@ -4548,14 +4498,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934580871}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012915078, w: 0.9999167}
   m_LocalPosition: {x: -2.75, y: 7.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2133729061}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.48}
 --- !u!114 &1934580873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4577,7 +4527,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!23 &1934580874
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4638,23 +4587,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &1934580877
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934580871}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: a0f9de83e1ec75244bf5eac4205c8873, type: 2}
-  - {fileID: 7400000, guid: 2442855e343e33c49a6059c5ac342a43, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1962037692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,7 +4600,6 @@ GameObject:
   - component: {fileID: 1962037695}
   - component: {fileID: 1962037694}
   - component: {fileID: 1962037697}
-  - component: {fileID: 1962037698}
   m_Layer: 0
   m_Name: Asteroide_2
   m_TagString: Untagged
@@ -4683,14 +4614,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962037692}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.85819924, w: 0.51331663}
   m_LocalPosition: {x: -2.75, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2068189248}
   m_Father: {fileID: 1854167913}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -118.23}
 --- !u!114 &1962037694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4712,7 +4643,6 @@ MonoBehaviour:
   player2: {fileID: 0}
   ball: {fileID: 0}
   audioSource: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!23 &1962037695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4773,22 +4703,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &1962037698
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962037692}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 111f5f4a99eabcc4c874160714f09b6a, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &2057699279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,6 +4794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068189248}
   - component: {fileID: 2068189249}
+  - component: {fileID: 2068189250}
   m_Layer: 0
   m_Name: AsteroidePixelArt_2
   m_TagString: Untagged
@@ -4951,6 +4866,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2068189250
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068189247}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2115219088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,6 +4895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115219089}
   - component: {fileID: 2115219090}
+  - component: {fileID: 2115219091}
   m_Layer: 0
   m_Name: AsteroidePixelArt_1
   m_TagString: Untagged
@@ -5032,6 +4967,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2115219091
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115219088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2117921035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5042,6 +4996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117921036}
   - component: {fileID: 2117921037}
+  - component: {fileID: 2117921038}
   m_Layer: 0
   m_Name: AsteroidePixelArt_4
   m_TagString: Untagged
@@ -5113,6 +5068,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2117921038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117921035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2130734683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,6 +5097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2130734684}
   - component: {fileID: 2130734685}
+  - component: {fileID: 2130734686}
   m_Layer: 0
   m_Name: AsteroidePixelArt_5
   m_TagString: Untagged
@@ -5194,6 +5169,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2130734686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130734683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2133729060
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,6 +5198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2133729061}
   - component: {fileID: 2133729062}
+  - component: {fileID: 2133729063}
   m_Layer: 0
   m_Name: AsteroidePixelArt_3
   m_TagString: Untagged
@@ -5275,3 +5270,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2133729063
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133729060}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5caba2d7029f00448b25cad37b5c2270, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
