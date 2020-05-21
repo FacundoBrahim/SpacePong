@@ -17,6 +17,9 @@ public class Player : MonoBehaviour {
     public Ball ball;
 
     void Update () {
+        if (game.type == Game.types.INTRO) {
+            return;
+        }
         float player_y = transform.position.y;
         if (type == types.PLAYER1) {
             if (Input.GetKey (KeyCode.UpArrow) && player_y <= game.sizes.y - offset) {

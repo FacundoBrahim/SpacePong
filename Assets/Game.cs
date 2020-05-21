@@ -6,18 +6,19 @@ using UnityEngine.UI;
 public class Game : MonoBehaviour
 {
     public Vector2 sizes = new Vector2(8, 5);
-
+    public types type;
+    public enum types
+    {
+        INTRO,
+        PLAYING,
+        GAMEOVER
+    }
     public int score_player_1;
     public int score_player_2;
     public Text field_score_p1;
     public Text field_score_p2;
-
     public Player.types playerActiveType;
 
-    void Start()
-    {
-        
-    }
     public void Win(int playerID, int score)
     {
         if (playerID == 1)

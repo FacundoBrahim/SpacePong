@@ -14,6 +14,9 @@ public class Ball : MonoBehaviour {
     float _y;
 
     void Update () {
+        if (game.type == Game.types.INTRO) {
+            return;
+        }
         _x = transform.position.x + speed * direction_x * Time.deltaTime;
         _y = transform.position.y + speed * direction_y * Time.deltaTime;
         if (_x >= game.sizes.x) {

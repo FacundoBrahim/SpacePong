@@ -14,8 +14,16 @@ public class Coin : MonoBehaviour {
     public Player player2;
     public Ball ball;
     public AudioSource audioSource;
+    public Animator anim;
+
+    void Start () {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     void Update () {
+        if (game.type == Game.types.INTRO) {
+            return;
+        }
         _x = transform.position.x;
         _y = transform.position.y + speed * direction_y * Time.deltaTime;
 
@@ -72,5 +80,6 @@ public class Coin : MonoBehaviour {
         _y /= 1.2f;
 
         transform.position = new Vector2 (_x, _y);
+        anim.Play("aparicion");
     }
 }
