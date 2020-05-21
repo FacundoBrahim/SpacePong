@@ -45,7 +45,7 @@ public class Coin : MonoBehaviour {
 
     private void OnTriggerEnter (Collider other) {
         int extra = 0;
-        if (transform.localScale.x == 0.8f) { // Selecciono solo los astronautas
+        if (transform.localScale.x == 0.6f) { // Selecciono solo los astronautas
             audioSource.Play();
             if (ball.direction_x == 1){ // Si la direccion de la pelota es 1, osea el ultimo en pegarle fue el jugador 2
                 player2.AumentarTamaño(); // Activar funcion que aumenta el tamaño por 2 seg y lo vuelve a la normalidad

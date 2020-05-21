@@ -31,13 +31,13 @@ public class Game : MonoBehaviour
             field_score_p2.text = score_player_2.ToString();
         }
 
-        if (score_player_1 > 150)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-        }
-        if (score_player_2 > 150)
+        if (score_player_1 >= 150)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver2");
+        }
+        if (score_player_2 >= 150)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
     }
 }
