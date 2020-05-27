@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class FondoInfinito : MonoBehaviour
 {
+    public Game game;
     Material mt;
-    public float paralax = 2f;
+    public float paralax;
     Vector2 offset;
 
     void Start()
@@ -17,6 +18,12 @@ public class FondoInfinito : MonoBehaviour
 
     void Update()
     {
+        if (game.type == Game.types.INTRO) {
+            paralax = 10f;
+        } else
+        {
+            paralax = 2f;
+        }
         offset.y += Time.deltaTime / paralax;
         mt.mainTextureOffset = offset;
     }
