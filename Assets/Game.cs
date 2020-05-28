@@ -18,6 +18,7 @@ public class Game : MonoBehaviour
     public Text field_score_p1;
     public Text field_score_p2;
     public Player.types playerActiveType;
+    public ParticleManager particleManager;
 
     public void Win(int playerID, int score)
     {

@@ -15,7 +15,13 @@ public class Ball : MonoBehaviour {
 
     void Update () {
         if (game.type == Game.types.INTRO) {
+            if (transform.localScale.x == 0.700f) {
+                transform.localScale = new Vector2 (transform.localScale.x - 0.700f, transform.localScale.y - 0.700f);
+            }
             return;
+        }
+        if (transform.localScale.x == 0f) {
+            transform.localScale = new Vector2 (transform.localScale.x + 0.700f, transform.localScale.y + 0.700f);
         }
         _x = transform.position.x + speed * direction_x * Time.deltaTime;
         _y = transform.position.y + speed * direction_y * Time.deltaTime;

@@ -55,6 +55,7 @@ public class Coin : MonoBehaviour {
         int extra = 0;
         if (transform.localScale.x == 0.6f) { // Selecciono solo los astronautas
             audioSource.Play();
+            game.particleManager.BallHitCoin(ball.transform.position);
             if (ball.direction_x == 1){ // Si la direccion de la pelota es 1, osea el ultimo en pegarle fue el jugador 2
                 player2.AumentarTamaño(); // Activar funcion que aumenta el tamaño por 2 seg y lo vuelve a la normalidad
             }
@@ -62,8 +63,9 @@ public class Coin : MonoBehaviour {
                 player1.AumentarTamaño(); // Si no es 1, osea el ultimo en pegarle fue el jugador 1, activar esa funcion al jugador 1
             }
             extra = 4; // Los astronautas suman 4 puntos extras
+        } else {
+            game.particleManager.asteroidBallColision(ball.transform.position);
         }
-
         if (game.playerActiveType == Player.types.PLAYER1)
             game.Win (1, -1 + extra);
         else

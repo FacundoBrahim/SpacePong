@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
         PLAYER2
     }
     float offset = 0.7f;
-    public Animation anim;
     public AudioSource audioSource;
     public Ball ball;
 
@@ -78,7 +77,6 @@ public class Player : MonoBehaviour {
 
         //choco con la pelota:
         game.playerActiveType = type;
-        anim.Play ();
         audioSource.Play ();
         ball.AumentarSpeed ();
         float center = transform.position.y;

@@ -13,7 +13,7 @@ public class InitialPopUp : MonoBehaviour
     void Start()
     {
         timer = 4;
-        Invoke("CuentaRegresiva", 2);
+        Invoke("CuentaRegresiva", 0.400f);
     }
 
     void Reset()
@@ -28,7 +28,7 @@ public class InitialPopUp : MonoBehaviour
         Invoke("CuentaRegresiva", 1);
         if (timer == 0)
         {
-            countdownField.text = "YA";
+            countdownField.text = "YA!";
             Invoke("Reset", 1);
         }
     } 
